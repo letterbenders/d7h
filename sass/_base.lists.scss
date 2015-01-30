@@ -1,0 +1,8 @@
+.list__grey{
+	@extend %list-reset;
+	color:$grey;
+	li{
+		margin-top:3px;
+	}
+	
+}

@@ -1,0 +1,7 @@
+.section-three-col{
+	margin-top: 50px;
+
+	@include media-query(palm){
+		margin-top: 0;
+	}
+}

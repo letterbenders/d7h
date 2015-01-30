@@ -1,0 +1,29 @@
+.section-masonry{
+
+	.row{
+		padding: 0;
+	}
+	.masonry__item {
+		padding:$site-padding;
+
+		&__content{
+			border-top: 1px solid $black;
+			padding-top: 20px;
+			margin-top: 30px;
+		}
+		
+		
+			img{
+				width:100%;
+			}
+
+		@include media-query(lap-and-up){
+
+		width: 30%;
+		margin:0 1.666%;
+		padding:0;
+
+		}
+
+	}
+}

@@ -1,0 +1,27 @@
+.section-grid{
+	.grid__item{
+		margin-bottom:30px;
+		margin-right: -4px;
+			
+			img{
+				margin-bottom: 35px;
+				
+				@include media-query(palm){
+					margin-bottom: 1em;
+				}
+			}
+
+			&__content{
+				@include media-query(palm){
+					height: auto !important;
+				}
+			}
+		@include media-query(palm){
+			margin-bottom: 20px;
+		}
+	}
+
+	.readmore{
+		margin-top: 20px;
+	}
+}

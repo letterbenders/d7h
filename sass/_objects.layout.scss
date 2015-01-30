@@ -1,0 +1,66 @@
+/*
+* #PAGES 
+*/
+
+body{
+	background:$white;
+	@extend %proxima;
+	color:$black;
+
+}
+
+$site-padding:20px;
+
+%row, .row{
+	
+	margin-left:auto;
+	margin-right: auto;
+	padding:0 $site-padding;
+	//background:#e0e0e0;
+
+	/*@include media-query(lap){
+		width:730px;
+	}*/
+
+	@include media-query(desk){
+		width:1150px;
+	}
+}	
+.section{
+	margin:30px 0;
+
+	/*&:empty{
+		display:none;
+	}*/
+}
+
+
+.layout{
+	@extend %layout;
+	
+	img{
+		margin-bottom: 1em;
+	}
+
+	&__item{
+		color:$grey;
+		margin-right:-4px;
+		
+		a{
+			color:inherit;
+		}
+
+		ul{
+		padding-left: 20px;
+
+			li{
+				margin-top: 3px;
+				list-style-type:disc;
+			}
+		}
+	}
+}
+
+.footer__item{
+
+}

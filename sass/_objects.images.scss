@@ -1,0 +1,9 @@
+%animate-img--fade, .animate-img--fade{
+	
+	@include animate(0.3s);
+
+	&:hover{
+
+		@include cross-browser(opacity, 0.7);
+	}
+}

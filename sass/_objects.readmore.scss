@@ -1,0 +1,11 @@
+.readmore{
+	margin-top: 10px;
+	display:inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:$black;
+
+		&:hover{
+			color:$blue;
+		}
+}

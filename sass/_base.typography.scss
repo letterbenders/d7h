@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic);
+
+.proxima, %proxima{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.kepler, %kepler{
+	font-family: 'Libre Baskerville', serif;
+	font-style:italic;
+}
+
+p{
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+.p-header, strong{
+	color:$black;
+	margin-bottom: 0;
+}
+
+strong{
+	font-weight:600;
+}

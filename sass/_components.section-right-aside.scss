@@ -1,0 +1,56 @@
+.section-right-aside{
+	img{
+		margin-bottom: 3em;
+	}
+	
+	.back-button{
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.share-icons{
+	
+		&__text{
+			border-top:1px solid $black;
+			padding-top: 20px;
+		}
+		&__buttons{
+			text-align: center;
+			margin-top: 30px;
+
+			.synved-social-credit{
+				display:none;
+			}
+			.synved-social-button{
+				margin:0 20px !important;
+
+				img{
+					display:none !important;
+				}
+
+				@include media-query(palm){
+					
+					margin:0 10px !important;
+					
+				}
+			}
+
+			.synved-social-provider-facebook{
+				background:url(../img/social_icons_facebook.png) no-repeat center center;
+			}
+
+			.synved-social-provider-pinterest{
+				background:url(../img/social_icons_pinterest.png) no-repeat center center;
+			}
+
+			.synved-social-provider-mail{
+				background:url(../img/social_icons_email.png) no-repeat center center;
+			}
+		}
+	}
+	
+	@include media-query(palm){
+		img{
+			margin-bottom: 1em;
+		}
+	}
+}

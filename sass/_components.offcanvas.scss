@@ -1,0 +1,66 @@
+.toggle-nav{
+		background:url(../img/nav.svg) no-repeat;
+		background-size:20px 20px;
+		display:block;
+		width:20px;
+		height:20px;
+		position: absolute;
+		top:20px;
+		left:20px;
+
+		@include media-query(desk){
+			display:none;
+		}
+	}
+	
+
+#off-canvas{
+	background: $blue;
+	@include media-query(desk){
+		display:none;
+	}
+
+	.main-nav{
+		ul{
+			@extend %list-reset;
+			
+			li{
+				
+				@include cross-browser(opacity, 0.6);
+				
+				a{
+					color:#fff;
+					font-size:120%;
+					text-decoration: none;
+					display:block;
+					padding:20px;
+
+						&::after{
+
+						background:url(../img/arrow_white.svg) no-repeat right center;
+					    background-size:25px 15px;
+					    content: " ";
+					    width:25px;
+					    height:25px; 
+					    display: inline-block;
+					    float:right;
+					    @include cross-browser(opacity, 0.2);   
+					}
+				}
+
+				
+			}
+
+			.current-menu-item, .current_page_item{
+				background:$blue-alt;
+				@include cross-browser(opacity, 1);
+					a{
+						&::after{
+							@include cross-browser(opacity, 1);
+					}
+				}
+				
+			}
+		}	
+	}
+}

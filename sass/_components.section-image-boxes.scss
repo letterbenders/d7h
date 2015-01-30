@@ -1,0 +1,179 @@
+.section-image-boxes{
+	.image-box{
+		position: relative;
+		margin-bottom: 30px;
+		
+		img{
+			width:100%;
+			margin-bottom: 0;
+		}
+	
+	
+		&__text{
+			width:85%;
+			text-align: center;
+
+			h4{
+				font-size:25px;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+			p{
+				margin:0;
+			}
+
+			a{
+				font-style: italic;
+				font-size:17px;
+				@extend %kepler;
+				display: inline-block;
+				margin-top: 5px;
+				color:inherit;
+			}	
+		}
+
+		ul{
+			@extend %list-reset;
+		}
+
+		@include media-query(palm){
+			&__text{
+				h4{
+					font-size:16px !important;
+				}
+
+				p{
+					font-size:12px !important;
+				}
+
+				a{
+					font-size:14px !important;
+				}
+			}
+		}
+	}
+
+	.box-1{
+		.image-box__text{
+			@include center-center;
+			color:$white;
+
+			a{
+				color:$white;
+				margin-top: 10px;
+			}
+
+			p{
+				font-size:14px;
+			}
+
+			ul{
+				margin-top: 10px;
+
+				li{
+					list-style-type: none;
+				}
+			}
+
+			@include media-query(palm){
+				ul{
+					margin-top: 5px;
+				}
+
+				li:last-child{
+					background:#ccc;
+					display:none;
+				}
+			}
+		}
+	}
+
+	.box-2{
+		.image-box__text{
+			@include center-bottom(10%);
+			color:$white;
+
+				p{
+					margin-top: 10px;
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+
+				a{
+					display: inline-block;
+					margin-top: 30px;
+				}
+		}
+	}
+
+	.box-3{
+		.image-box__text{
+			@include center-bottom(5%);
+
+			padding:5% 10%;
+			background:rgba(255,255,255, .85);
+			color:$black;
+
+			h4{
+
+				font-weight: 400;
+				letter-spacing: 4px;
+				@extend %kepler;
+				@extend %underline;
+			}
+		}
+	}
+
+	.box-4{
+		.image-box__text{
+			@include center-bottom(10%);
+			color:$white;
+
+				p{
+					margin-top: 10px;
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+
+				a{
+					display: inline-block;
+					margin-top: 10px;
+				}
+
+				@include media-query(palm){
+
+					p{
+						margin-top: 5px;
+					}
+					a{
+						margin-top: 5px;
+					}
+				}
+		}
+	}
+
+	.box-5{
+		.image-box__text{
+			@include center-center;
+			color:$white;
+
+				p{
+					font-weight: 600;
+					color:$grey;
+				}
+
+				h4{
+					font-size:30px;
+					margin: 10px 0 0;
+					text-transform: uppercase;
+				}
+		}
+	}
+
+	@include media-query(lap){
+		.newsletter-box{
+			display:none;
+		}
+	}
+}

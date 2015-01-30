@@ -1,0 +1,175 @@
+.section-footer{
+	
+	.clients{
+		margin-top: 60px;
+
+		img{
+			margin: 0 auto;
+		}
+	}
+
+	.grey{
+		opacity: 0.4;
+	}
+	.layout{
+		margin-top:30px;
+	}
+
+	.image-box{
+		position: relative;
+		margin-top: 30px;
+		
+		img{
+			width:100%;
+		}
+
+		.image-box__text{
+			width:80%;
+			text-align: center;
+			@include center-center;
+
+			h4{
+				font-size:25px;
+				text-transform: uppercase;
+			}
+
+			a{
+				text-transform: uppercase;
+				font-size:17px;
+			}
+
+			@include media-query(palm){
+			
+				h4{
+					font-size:16px !important;
+				}
+
+				p{
+					font-size:12px !important;
+				}
+
+				a{
+					font-size:14px !important;
+				}
+			}
+		}
+
+		@include media-query(palm){
+			margin-top: 5px;
+		}
+	}
+	.box-1{
+		.image-box__text{
+			padding:5% 10%;
+			background:rgba(255,255,255, .7);
+			color:$black;
+
+			h4{
+				font-weight: 400;
+				text-transform: uppercase;
+				font-size:26px;
+				letter-spacing: 2px;
+				margin: 0;
+
+				@extend %kepler;
+				@extend %underline;
+			}
+
+			a{
+				@extend %kepler;
+				font-style: italic;
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.box-1-alt{
+		.image-box__text{
+			padding:5% 10%;
+			background:rgba(255,255,255, .7);
+			color:$black;
+
+			h4{
+		
+				font-weight: 700;
+				font-size:26px;
+				margin: 0;
+			}
+
+				a{
+				@extend %kepler;
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+	}
+
+
+
+	.box-2{
+		.image-box__text{
+			color:#fff;
+	
+			h4{
+				@extend %kepler;
+				font-style: italic;
+				font-weight: 400;
+				font-size:26px;
+				margin: 0 0 5px 0;
+			}
+
+			a{
+				@extend %kepler;
+				font-style: italic;
+			}
+		}
+	}
+
+	.box-3{
+		.image-box__text{
+			padding:5% 10%;
+			background:rgba(255,255,255, .7);
+			color:$black;
+
+			h4{
+		
+				font-weight: 700;
+				font-size:26px;
+				margin: 0;
+			}
+
+			a{
+				@extend %kepler;
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.contact{
+		text-align: center;
+		margin-top: 50px;
+
+		&__name{
+			font-size:120%;
+			margin: 0;
+		}
+
+		&__adress{
+			margin-top:10px;
+			margin-bottom: 0;
+		}
+
+		a{
+			color:$black;
+			text-decoration: none;
+		}	
+	}
+
+	.facebook{
+		@include media-query(lap){
+			display:none;
+		}
+	}	
+}
